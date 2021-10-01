@@ -12,5 +12,9 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "circulating-supply": {
+      "tags": []
+    }
+  }
 }
