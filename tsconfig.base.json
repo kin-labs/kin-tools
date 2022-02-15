@@ -17,7 +17,8 @@
     "paths": {
       "@kin-tools/circulating-supply": [
         "packages/circulating-supply/src/index.ts"
-      ]
+      ],
+      "@kin-tools/kin-memo": ["packages/kin-memo/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

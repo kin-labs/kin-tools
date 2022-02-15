@@ -1,0 +1,34 @@
+{
+  "root": "packages/kin-memo",
+  "sourceRoot": "packages/kin-memo/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/kin-memo",
+        "tsConfig": "packages/kin-memo/tsconfig.lib.json",
+        "packageJson": "packages/kin-memo/package.json",
+        "main": "packages/kin-memo/src/index.ts",
+        "assets": ["packages/kin-memo/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/kin-memo/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/kin-memo"],
+      "options": {
+        "jestConfig": "packages/kin-memo/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
