@@ -1083,7 +1083,7 @@
     tslib "^2.3.0"
     yargs-parser "20.0.0"
 
-"@nrwl/workspace@13.8.1":
+"@nrwl/workspace@13.8.1", "@nrwl/workspace@^13.4.1":
   version "13.8.1"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-13.8.1.tgz#4b27bdd752fdbfd8ca7718a23e204b9129884ac5"
   integrity sha512-veemewkJtK3UwOGJDcrVw5h+cpjFh3JnmwSnTFHqxKpsN/hkCQk3CgOmBJ4w50qI/gmyuEm+HeGC5/ZNq3kRDA==
@@ -6716,16 +6716,17 @@ nx@13.8.1:
   dependencies:
     "@nrwl/cli" "13.8.1"
 
-nxpm@^1.18.0:
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/nxpm/-/nxpm-1.18.0.tgz#c7f940d28307c52fd2d3e016864f4b44573ec809"
-  integrity sha512-i3d9vgf09/INl+Znih2PNNYgK7HClmWDPsWST7rvobTsnFs7916moDMeg5XZV/TQHxNR5z6QSA7wuuibQEdVSQ==
+nxpm@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/nxpm/-/nxpm-2.0.0.tgz#e068e7b3165437519b461c10d367ac14ce182cfa"
+  integrity sha512-czyQbXcL00V45yvUcFUNT4EAWfVum8kdYtdNG9it5yi6cekAX9v6/OIhZTNtgoiSy/rNesMA22EgMxOvM2XpWw==
   dependencies:
     "@angular-devkit/core" "^9.1.6"
     "@angular-devkit/schematics" "^9.1.6"
     "@angular/cli" "^9.1.6"
     "@angular/compiler" "^9.1.7"
     "@angular/compiler-cli" "^9.1.7"
+    "@nrwl/workspace" "^13.4.1"
     "@oclif/command" "^1.6.1"
     "@oclif/config" "^1.15.1"
     "@oclif/plugin-help" "^3.0.1"
