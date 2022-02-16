@@ -1,0 +1,34 @@
+{
+  "root": "packages/kin-transaction",
+  "sourceRoot": "packages/kin-transaction/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/kin-transaction",
+        "tsConfig": "packages/kin-transaction/tsconfig.lib.json",
+        "packageJson": "packages/kin-transaction/package.json",
+        "main": "packages/kin-transaction/src/index.ts",
+        "assets": ["packages/kin-transaction/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/kin-transaction/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/kin-transaction"],
+      "options": {
+        "jestConfig": "packages/kin-transaction/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "circulating-supply": "packages/circulating-supply",
-    "kin-memo": "packages/kin-memo"
+    "kin-memo": "packages/kin-memo",
+    "kin-transaction": "packages/kin-transaction"
   }
 }
