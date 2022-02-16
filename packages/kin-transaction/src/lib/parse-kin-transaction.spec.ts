@@ -19,9 +19,9 @@ describe('parseKinTransaction', () => {
     );
 
     // Verify the parsed memo
-    expect(parsed.parsedMemo.appIndex()).toEqual(184);
-    expect(parsed.parsedMemo.version()).toEqual(1);
-    expect(parsed.parsedMemo.transactionType()).toEqual(TransactionType.Earn);
+    expect(parsed.memoParsed.appIndex()).toEqual(184);
+    expect(parsed.memoParsed.version()).toEqual(1);
+    expect(parsed.memoParsed.transactionType()).toEqual(TransactionType.Earn);
 
     // Verify the token transfer
     expect(parsed.tokenTransfer.parsed?.type).toEqual('transfer');

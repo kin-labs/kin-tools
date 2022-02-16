@@ -12,5 +12,8 @@ describe('validateKinTransaction', () => {
 
     // Verify the raw memo
     expect(valid.memo).toEqual(true);
+    // Verify the transfers
+    expect(valid.isSolTransfer).toEqual(false);
+    expect(valid.isTokenTransfer).toEqual(true);
   });
 });
