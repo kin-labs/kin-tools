@@ -8,6 +8,6 @@ export function validateKinTransaction(
 ): KinValidateTransaction {
   return {
     mint: tx.mint && tx.mint === mint,
-    memo: tx.memo && tx.parsedMemo && tx.parsedMemo?.version() === 1,
+    memo: tx.memo && tx.memoParsed && tx.memoParsed?.version() === 1,
   };
 }

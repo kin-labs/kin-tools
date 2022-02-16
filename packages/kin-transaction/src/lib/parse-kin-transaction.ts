@@ -14,6 +14,10 @@ export function parseKinTransaction(
   const instructions = tx?.transaction?.message
     ?.instructions as ParsedInstruction[];
 
+  const solTransfer = instructions.find(
+    (item) => item.program === 'system' && item.parsed?.type === 'transfer'
+  );
+
   const tokenTransfer = instructions.find(
     (item) => item.program === 'spl-token'
   );
@@ -23,7 +27,7 @@ export function parseKinTransaction(
     (item) => item.programId?.toString() === MEMO_V1_TOKEN_ID
   );
 
-  const parsedMemo = memo?.parsed
+  const memoParsed = memo?.parsed
     ? KinMemo.fromB64String(memo.parsed)
     : undefined;
 
@@ -31,7 +35,9 @@ export function parseKinTransaction(
     tx,
     mint,
     memo,
-    parsedMemo,
+    memoCount: memos?.length,
+    memoParsed,
+    solTransfer,
     tokenTransfer,
   };
 }
