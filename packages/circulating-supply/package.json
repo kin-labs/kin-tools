@@ -1,6 +1,6 @@
 {
   "name": "@kin-tools/circulating-supply",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "dependencies": {
     "@kinecosystem/kin-sdk-v2": "^0.5.0",
     "etherscan-ts": "^0.0.5",
