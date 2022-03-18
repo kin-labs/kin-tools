@@ -1,6 +1,6 @@
 import { TransactionType } from '@kin-tools/kin-memo';
-import { KIN_MINT_MAINNET, MEMO_V1_TOKEN_ID_MAINNET } from '@kin-tools/kin-transaction';
 import { TOKEN_PROGRAM_ID } from '@solana/spl-token';
+import { KIN_MINT_MAINNET, MEMO_V1_TOKEN_ID } from './constants';
 import { demoKinTxWithAppIndex } from './fixtures/demo-tx.fixtures';
 import { parseKinTransaction } from './parse-kin-transaction';
 
@@ -12,7 +12,7 @@ describe('parseKinTransaction', () => {
     expect(parsed.mint).toEqual(KIN_MINT_MAINNET);
 
     // Verify the raw memo
-    expect(parsed.memo.programId.toString()).toEqual(MEMO_V1_TOKEN_ID_MAINNET);
+    expect(parsed.memo.programId.toString()).toEqual(MEMO_V1_TOKEN_ID);
     expect(parsed.memo.program).toEqual('spl-memo');
     expect(parsed.memo.parsed).toEqual(
       'JeACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA='
