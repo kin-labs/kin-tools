@@ -36,7 +36,7 @@ export const solanaAddresses = {
   },
 };
 
-function kinToQuarks(amount: string): BigNumber {
+function kinToQuarks(amount: number): BigNumber {
   const b = new BigNumber(amount).decimalPlaces(5, BigNumber.ROUND_DOWN);
   return b.multipliedBy(1e5);
 }
@@ -67,7 +67,7 @@ interface GenerateTransferInstruction {
   from: PublicKey;
   fromTokenAccount: PublicKey;
   toTokenAccount: PublicKey;
-  amount: string;
+  amount: number;
 }
 export async function generateTransferInstruction({
   from,
@@ -96,7 +96,7 @@ export interface GenerateKRETransactionInstructions {
   from: PublicKey;
   fromTokenAccount: PublicKey;
   toTokenAccount: PublicKey;
-  amount: string;
+  amount: number;
   solanaNetwork: SolanaNetwork;
 }
 

@@ -18,7 +18,7 @@ describe('generateKRETransactionInstructions', () => {
       toTokenAccount: new PublicKey(
         '9b8RvXYYNxFoTNAMBwGDfqWHKpJvX7hYgdginQKmwrFL'
       ),
-      amount: '1000',
+      amount: 1000,
       solanaNetwork: 'Mainnet',
     };
     const instructionsKRE = await generateKRETransactionInstructions(options);
