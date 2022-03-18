@@ -1,5 +1,4 @@
 import { TOKEN_PROGRAM_ID } from '@solana/spl-token';
-import { PublicKey } from '@solana/web3.js';
 import { TransactionType } from '@kin-tools/kin-memo';
 
 import { generateKRETransactionInstructions } from './kin-sdkless-instructions';
@@ -11,7 +10,7 @@ describe('generateKRETransactionInstructions', () => {
     const options: GenerateKRETransactionInstructions = {
       amount: '1000',
       appIndex: 360,
-      from: new PublicKey('BQJi5K2s4SDDbed1ArpXjb6n7yVUfM34ym9a179MAqVo'),
+      from: 'BQJi5K2s4SDDbed1ArpXjb6n7yVUfM34ym9a179MAqVo',
       fromTokenAccount: '9guRAtmksTgMdRmr23dfEJp8dbKAzWzhp5NRBNTctGgy',
       toTokenAccount: '9b8RvXYYNxFoTNAMBwGDfqWHKpJvX7hYgdginQKmwrFL',
       type: TransactionType.P2P,
