@@ -1,7 +1,7 @@
 import { TransactionType } from '@kin-tools/kin-memo';
-import { PublicKeyString } from './PublicKeyString';
+import { PublicKeyString } from './public-key-string';
 
-export interface GenerateKRETransactionInstructions {
+export interface GenerateKreTransactionInstructions {
   amount: string;
   appIndex: number;
   from: PublicKeyString;

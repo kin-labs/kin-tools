@@ -1,4 +1,4 @@
-import { PublicKeyString } from './PublicKeyString';
+import { PublicKeyString } from './public-key-string';
 
 export interface GenerateTransferInstruction {
   amount: string;

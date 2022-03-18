@@ -1,11 +1,11 @@
-import { GenerateKRETransactionInstructions } from "./GenerateKRETransactionInstructions";
-import { GenerateMemoInstruction } from "./GenerateMemoInstruction";
-import { GenerateTransferInstruction } from "./GenerateTransferInstruction";
-import { PublicKeyString } from './PublicKeyString'
+import { GenerateKreTransactionInstructions } from './generate-kre-transaction-instructions';
+import { GenerateMemoInstruction } from './generate-memo-instruction';
+import { GenerateTransferInstruction } from './generate-transfer-instruction';
+import { PublicKeyString } from './public-key-string';
 
 export {
-  GenerateKRETransactionInstructions,
+  GenerateKreTransactionInstructions,
   GenerateMemoInstruction,
   GenerateTransferInstruction,
-  PublicKeyString
-}
+  PublicKeyString,
+};
