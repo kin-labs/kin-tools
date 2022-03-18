@@ -1,6 +1,6 @@
 import { TransactionType } from '@kin-tools/kin-memo';
-import { KIN_MINT_MAINNET, MEMO_V1_TOKEN_ID } from '@kin-tools/kin-transaction';
 import { TOKEN_PROGRAM_ID } from '@solana/spl-token';
+import { KIN_MINT_MAINNET, MEMO_V1_TOKEN_ID } from './constants';
 import { demoKinTxWithAppIndex } from './fixtures/demo-tx.fixtures';
 import { parseKinTransaction } from './parse-kin-transaction';
 

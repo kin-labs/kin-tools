@@ -1,7 +1,7 @@
 import { KinMemo } from '@kin-tools/kin-memo';
 import { ParsedInstruction, ParsedTransactionWithMeta } from '@solana/web3.js';
 import { KinParsedTransaction } from './kin-parsed-transaction';
-import { MEMO_V1_TOKEN_ID } from './kin-transaction-constants';
+import { MEMO_V1_TOKEN_ID } from './constants';
 
 export function getMintAddress(tx: ParsedTransactionWithMeta) {
   return tx?.meta?.postTokenBalances?.find((items) => items.mint)?.mint;

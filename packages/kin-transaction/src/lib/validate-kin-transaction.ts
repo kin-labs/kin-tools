@@ -1,5 +1,5 @@
 import { KinParsedTransaction } from './kin-parsed-transaction';
-import { KIN_MINT_MAINNET } from './kin-transaction-constants';
+import { KIN_MINT_MAINNET } from './constants';
 import { KinValidateTransaction } from './kin-validate-transaction';
 
 export function validateKinTransaction(
