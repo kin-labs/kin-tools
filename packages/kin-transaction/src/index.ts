@@ -1,3 +1,4 @@
+export { TransactionType } from '@kin-tools/kin-memo'
 export * from './lib/kin-parsed-transaction';
 export * from './lib/kin-sdkless-instructions';
 export * from './lib/constants';
