@@ -1,24 +1,14 @@
-import { createKinMemo, TransactionType } from '@kin-tools/kin-memo';
+import { TransactionType } from '@kin-tools/kin-memo';
 import { createTransferInstruction, TOKEN_PROGRAM_ID } from '@solana/spl-token';
-import { PublicKey, TransactionInstruction } from '@solana/web3.js';
-
-import { MEMO_V1_TOKEN_ID } from './constants';
-import { getPublicKey, kinToQuarks } from './helpers';
+import {
+  generateKinMemoInstruction,
+  getPublicKey,
+  kinToQuarks,
+} from './helpers';
 import {
   GenerateKreTransactionInstructions,
-  GenerateMemoInstruction,
   GenerateTransferInstruction,
 } from './interfaces';
-
-function generateMemoInstruction({
-  memoContent,
-}: GenerateMemoInstruction): TransactionInstruction {
-  return new TransactionInstruction({
-    keys: [],
-    programId: new PublicKey(MEMO_V1_TOKEN_ID),
-    data: Buffer.from(memoContent),
-  });
-}
 
 async function generateTransferInstruction({
   amount,
@@ -48,14 +38,9 @@ export async function generateKreTransactionInstructions({
   toTokenAccount,
   type = TransactionType.None,
 }: GenerateKreTransactionInstructions) {
-  // Create correctly formatted memo string, including your App Index
-  const appIndexMemo = createKinMemo({
+  const appIndexMemoInstruction = generateKinMemoInstruction({
     appIndex,
     type,
-  });
-  // Create Memo Instruction for KRE Ingestion - Must be Memo Program v1, not v2
-  const appIndexMemoInstruction = generateMemoInstruction({
-    memoContent: appIndexMemo,
   });
 
   // Create Transfer Instruction

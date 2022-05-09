@@ -20,7 +20,7 @@ export class KinMemo {
     return new this(buf);
   }
 
-  static fromB64String(s: string, strict: boolean = true): KinMemo | undefined {
+  static fromB64String(s: string, strict = true): KinMemo | undefined {
     const raw = Buffer.from(s, 'base64');
     const m = KinMemo.from(raw);
     if (!KinMemo.isValid(m, strict)) {

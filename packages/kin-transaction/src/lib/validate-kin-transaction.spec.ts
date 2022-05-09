@@ -1,5 +1,5 @@
-import { parseKinTransaction } from '@kin-tools/kin-transaction';
 import { demoKinTxWithAppIndex } from './fixtures/demo-tx.fixtures';
+import { parseKinTransaction } from './parse-kin-transaction';
 import { validateKinTransaction } from './validate-kin-transaction';
 
 describe('validateKinTransaction', () => {
