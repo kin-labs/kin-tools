@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generateMemoInstruction should create a Memo Instruction 1`] = `
+TransactionInstruction {
+  "data": Object {
+    "data": Array [
+      116,
+      101,
+      115,
+      116,
+      32,
+    ],
+    "type": "Buffer",
+  },
+  "keys": Array [],
+  "programId": "Memo1UhkJRfHyvLMcVucJwxXeuD728EqVDDwQDxFMNo",
+}
+`;
