@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@kin-tools/kin-burn": ["packages/kin-burn/src/index.ts"],
       "@kin-tools/kin-memo": ["packages/kin-memo/src/index.ts"],
       "@kin-tools/kin-transaction": ["packages/kin-transaction/src/index.ts"]
     }

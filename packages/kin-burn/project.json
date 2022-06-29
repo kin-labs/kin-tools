@@ -1,0 +1,34 @@
+{
+  "root": "packages/kin-burn",
+  "sourceRoot": "packages/kin-burn/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/kin-burn",
+        "tsConfig": "packages/kin-burn/tsconfig.lib.json",
+        "packageJson": "packages/kin-burn/package.json",
+        "main": "packages/kin-burn/src/index.ts",
+        "assets": ["packages/kin-burn/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/kin-burn/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/kin-burn"],
+      "options": {
+        "jestConfig": "packages/kin-burn/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
