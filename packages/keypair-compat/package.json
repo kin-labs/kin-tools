@@ -1,6 +1,6 @@
 {
   "name": "@kin-tools/keypair-compat",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "dependencies": {
     "@kin-kinetic/keypair": "^1.0.0-beta.16",
     "atob": "^2.1.2",
