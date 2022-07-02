@@ -6,7 +6,7 @@ describe('generateMemoInstruction', () => {
     const memo = generateMemoInstruction({ memoContent: 'test ' });
 
     expect(memo.programId.toBase58()).toEqual(MEMO_V1_TOKEN_ID);
-    expect(memo.keys).toEqual(MEMO_V1_TOKEN_ID);
+    expect(memo.keys).toEqual([]);
     expect(memo).toMatchSnapshot();
   });
 });

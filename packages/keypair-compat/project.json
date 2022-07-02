@@ -1,0 +1,34 @@
+{
+  "root": "packages/keypair-compat",
+  "sourceRoot": "packages/keypair-compat/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/keypair-compat",
+        "tsConfig": "packages/keypair-compat/tsconfig.lib.json",
+        "packageJson": "packages/keypair-compat/package.json",
+        "main": "packages/keypair-compat/src/index.ts",
+        "assets": ["packages/keypair-compat/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/keypair-compat/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/keypair-compat"],
+      "options": {
+        "jestConfig": "packages/keypair-compat/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

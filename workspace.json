@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "keypair-compat": "packages/keypair-compat",
     "kin-burn": "packages/kin-burn",
     "kin-memo": "packages/kin-memo",
     "kin-transaction": "packages/kin-transaction"

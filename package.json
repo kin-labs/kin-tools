@@ -5,8 +5,13 @@
   "scripts": {},
   "private": true,
   "dependencies": {
+    "@kin-kinetic/keypair": "^1.0.0-beta.16",
     "@solana/spl-token": "^0.2.0",
     "@solana/web3.js": "^1.34.0",
+    "atob": "^2.1.2",
+    "bs58": "^5.0.0",
+    "crc": "^4.1.1",
+    "hex-to-32": "^2.0.0",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
