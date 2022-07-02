@@ -1,11 +1,12 @@
 {
   "name": "@kin-tools/keypair-compat",
-  "version": "0.0.1",
+  "version": "1.7.0",
   "dependencies": {
     "@kin-kinetic/keypair": "^1.0.0-beta.16",
     "atob": "^2.1.2",
     "bs58": "^5.0.0",
     "crc": "^4.1.1",
     "hex-to-32": "^2.0.0"
-  }
+  },
+  "license": "MIT"
 }
