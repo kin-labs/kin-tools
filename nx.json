@@ -1,24 +1,26 @@
 {
-  "extends": "@nrwl/workspace/presets/npm.json",
+  "extends": "nx/presets/npm.json",
   "npmScope": "kin-tools",
   "affected": {
     "defaultBase": "master"
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
-        "parallel": 1
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "parallel": 1,
+        "accessToken": "NDQ4Y2VmMmEtNjIwMy00NTYwLWJmZDAtZDBiOWE0MTRmYzgzfHJlYWQtd3JpdGU="
       }
     }
   },
   "cli": {
     "defaultCollection": "@nrwl/workspace"
+  },
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"]
+    }
   }
 }

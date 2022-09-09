@@ -1,10 +1,10 @@
 {
-  "root": "packages/kin-memo",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/kin-memo/src",
   "projectType": "library",
   "targets": {
     "build": {
-      "executor": "@nrwl/node:package",
+      "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/packages/kin-memo",
@@ -25,7 +25,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/packages/kin-memo"],
       "options": {
-        "jestConfig": "packages/kin-memo/jest.config.js",
+        "jestConfig": "packages/kin-memo/jest.config.ts",
         "passWithNoTests": true
       }
     }

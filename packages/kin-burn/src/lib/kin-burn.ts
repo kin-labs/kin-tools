@@ -1,5 +1,6 @@
-import { KIN_MINT_MAINNET } from '@kin-tools/kin-transaction';
 import { clusterApiUrl, Connection, PublicKey } from '@solana/web3.js';
+
+const KIN_MINT_MAINNET = 'kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6';
 
 export interface BurnSummary {
   burnt: number;

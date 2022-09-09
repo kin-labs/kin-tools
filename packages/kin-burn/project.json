@@ -1,10 +1,10 @@
 {
-  "root": "packages/kin-burn",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/kin-burn/src",
   "projectType": "library",
   "targets": {
     "build": {
-      "executor": "@nrwl/node:package",
+      "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/packages/kin-burn",
@@ -25,7 +25,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/packages/kin-burn"],
       "options": {
-        "jestConfig": "packages/kin-burn/jest.config.js",
+        "jestConfig": "packages/kin-burn/jest.config.ts",
         "passWithNoTests": true
       }
     }

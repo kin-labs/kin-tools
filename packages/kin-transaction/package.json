@@ -2,9 +2,9 @@
   "name": "@kin-tools/kin-transaction",
   "version": "1.7.1",
   "peerDependencies": {
-    "@kin-tools/kin-memo": "^1.1.0",
-    "@solana/web3.js": "^1.34.0",
-    "@solana/spl-token": "^0.2.0"
+    "@kin-tools/kin-memo": "^1.7.1",
+    "@solana/web3.js": "^1.59.1",
+    "@solana/spl-token": "^0.3.4"
   },
   "license": "MIT"
 }

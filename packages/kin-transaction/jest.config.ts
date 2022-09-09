@@ -1,4 +1,5 @@
-module.exports = {
+/* eslint-disable */
+export default {
   displayName: 'kin-transaction',
   preset: '../../jest.preset.js',
   globals: {
