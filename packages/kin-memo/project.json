@@ -23,7 +23,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/kin-memo"],
+      "outputs": ["{workspaceRoot}/coverage/packages/kin-memo"],
       "options": {
         "jestConfig": "packages/kin-memo/jest.config.ts",
         "passWithNoTests": true

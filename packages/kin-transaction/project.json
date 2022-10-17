@@ -23,7 +23,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/kin-transaction"],
+      "outputs": ["{workspaceRoot}/coverage/packages/kin-transaction"],
       "options": {
         "jestConfig": "packages/kin-transaction/jest.config.ts",
         "passWithNoTests": true
