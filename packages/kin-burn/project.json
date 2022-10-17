@@ -23,7 +23,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/kin-burn"],
+      "outputs": ["{workspaceRoot}/coverage/packages/kin-burn"],
       "options": {
         "jestConfig": "packages/kin-burn/jest.config.ts",
         "passWithNoTests": true
