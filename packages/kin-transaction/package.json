@@ -1,6 +1,6 @@
 {
   "name": "@kin-tools/kin-transaction",
-  "version": "1.8.2",
+  "version": "1.8.3",
   "peerDependencies": {
     "@kin-tools/kin-memo": "^1.7.1",
     "@solana/web3.js": "^1.54.0",
