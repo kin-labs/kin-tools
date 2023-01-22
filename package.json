@@ -8,7 +8,7 @@
     "@solana/web3.js": "^1.66.1"
   },
   "dependencies": {
-    "@kin-kinetic/keypair": "^1.0.0-rc.3",
+    "@kin-kinetic/keypair": "^1.0.0-rc.14",
     "@solana/spl-token": "^0.3.5",
     "@solana/web3.js": "^1.66.1",
     "atob": "^2.1.2",
